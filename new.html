@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NEWS HEIGHTS – LIVE Updates</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f2f2f2;
+  color:#111;
+}
+
+/* ===== LIVE TOP BAR ===== */
+.topbar{
+  background:#000;
+  color:#fff;
+  padding:6px 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+}
+
+.live-dot{
+  width:10px;height:10px;
+  background:red;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:6px;
+  animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);opacity:1}
+  50%{transform:scale(1.6);opacity:.4}
+  100%{transform:scale(1);opacity:1}
+}
+
+/* ===== HEADER ===== */
+.header{
+  background:#fff;
+  padding:14px;
+  display:flex;
+  align-items:center;
+  border-bottom:3px solid #c40000;
+}
+.logo{display:flex;align-items:center;gap:10px}
+.logo svg{width:48px;height:48px}
+.logo-text{font-size:26px;font-weight:800}
+.logo-text span{color:#c40000}
+
+/* ===== BREAKING ===== */
+.breaking{
+  background:#c40000;
+  color:#fff;
+  display:flex;
+  padding:8px 12px;
+  font-weight:700;
+}
+.breaking span{
+  background:#000;
+  padding:5px 10px;
+  margin-right:12px;
+}
+
+/* ===== TICKER ===== */
+.ticker{
+  background:#111;
+  color:#fff;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.ticker div{
+  padding-left:100%;
+  animation:ticker 18s linear infinite;
+}
+@keyframes ticker{
+  from{transform:translateX(0)}
+  to{transform:translateX(-100%)}
+}
+
+/* ===== LAYOUT ===== */
+.container{
+  max-width:1200px;
+  margin:20px auto;
+  padding:0 14px;
+}
+.headline{
+  font-size:32px;
+  font-weight:800;
+  margin-bottom:8px;
+}
+.subheadline{
+  color:#444;
+  margin-bottom:18px;
+}
+
+/* ===== SECTIONS ===== */
+.section{
+  background:#fff;
+  margin-bottom:20px;
+  border-left:6px solid #c40000;
+  padding:18px;
+}
+.section h2{
+  font-size:22px;
+  margin-bottom:10px;
+}
+.meta{
+  font-size:13px;
+  color:#666;
+  margin-bottom:10px;
+}
+
+/* ===== PDF VIEWER (FAKE) ===== */
+.pdf-viewer{
+  border:1px solid #ccc;
+  height:260px;
+  background:#fafafa;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#555;
+  font-size:15px;
+}
+
+/* ===== WEATHER ===== */
+.weather{
+  display:flex;
+  justify-content:space-between;
+  font-size:16px;
+}
+
+/* ===== ALERT ===== */
+.alert{
+  background:#fff3f3;
+  border-left:6px solid #c40000;
+}
+
+/* ===== MOBILE TV MODE ===== */
+@media(max-width:768px){
+  body.tv-mode{
+    background:#000;
+    color:#fff;
+  }
+  body.tv-mode .container,
+  body.tv-mode .section{
+    background:#000;
+    color:#fff;
+    border:none;
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:12px;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div><span class="live-dot"></span>LIVE NEWS</div>
+  <div id="time"></div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">
+    <svg viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="18" fill="#c40000"/>
+      <path d="M20 65 L20 30 L40 65 L40 30 L60 65 L60 30 L80 65"
+            stroke="#fff" stroke-width="6" fill="none"/>
+    </svg>
+    <div class="logo-text">NEWS <span>HEIGHTS</span></div>
+  </div>
+</div>
+
+<!-- BREAKING -->
+<div class="breaking">
+  <span>BREAKING</span>
+  DM ने जारी किया Latest School Order
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div>
+    DM आदेश LIVE • सभी सरकारी व निजी स्कूलों पर लागू • Weather Alert जारी • NEWS HEIGHTS पर सबसे पहले •
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- MAIN HEADLINE -->
+  <div class="headline">
+    DM Issues Fresh Order for Schools
+  </div>
+  <div class="subheadline">
+    सभी सरकारी और निजी विद्यालयों पर आदेश लागू | Parents aur Students ko follow karne ki salah
+  </div>
+
+  <!-- SCHOOL ORDERS -->
+  <div class="section">
+    <h2>School Orders</h2>
+    <div class="meta">Issued: 20 December 2025 | District Administration</div>
+    <p>
+    District Magistrate’s Official Order
+Issued On: 20 December 2025 | District Administration
+In view of the continuously increasing severe cold and dense fog in Agra district, the district administration has taken an important decision keeping in mind the safety and health of school children. Following instructions from District Magistrate Arvind Mallappa Bangari, District Basic Education Officer Jitendra Kumar Gond has issued an order changing the school timings for all schools from classes one to eight. According to the order, from December 20, 2025, until further notice, all schools in Agra district, including government, aided, recognized, and those affiliated with CBSE, ICSE, and other boards, will operate from 10:00 AM to 3:00 PM. This order has been implemented with immediate effect.
+
+The order shall remain effective until further instructions. All school authorities are directed to ensure strict compliance. Any violation of this order will invite action under relevant administrative rules. SOURCE - https://agra.nic.in/
+
+    <div class="pdf-viewer">
+      📄 Official Order PDF Preview (Viewer Mode)
+    </div>
+  </div>
+
+  <!-- WEATHER -->
+  <div class="section">
+    <h2>Weather Update</h2>
+    <div class="weather">
+      <div>🌫️ Cold Wave Alert</div>
+      <div>Temperature: 6°C – 14°C</div>
+    </div>
+  </div>
+
+  <!-- ALERTS -->
+  <div class="section alert">
+    <h2>Important Alert</h2>
+    <p>
+      Parents aur School Management se request hai ki official
+      instructions ka strictly palan karein. Any violation par
+      administrative action liya ja sakta hai.
+    </p>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="section">
+    <p style="font-size:14px;color:#333">
+      All the information provided above has been sourced from the official
+      communication and public notices issued on the authorized administrative portal.
+    </p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2025 NEWS HEIGHTS | Trusted News & Official Updates
+</div>
+
+<script>
+function updateTime(){
+  const n=new Date();
+  document.getElementById("time").innerText=
+    n.toLocaleDateString()+" | "+n.toLocaleTimeString();
+}
+setInterval(updateTime,1000);
+updateTime();
+
+/* Auto TV Mode on Mobile */
+if(window.innerWidth<768){
+  document.body.classList.add("tv-mode");
+}
+</script>
+
+</body>
+</html>
