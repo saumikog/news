@@ -178,6 +178,19 @@ body {
 .logo-text span {
   color: #c40000;
 }
+/* ===== SINGLE NEWS IMAGE ONLY ===== */
+.single-news-image {
+  background: #000;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.single-news-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
 
 
 </style>
@@ -207,7 +220,7 @@ body {
 <!-- BREAKING -->
 <div class="breaking">
   <span>BREAKING</span>
-  Fire In Agra: Fire in guest house causes panic, fire brigade team rescues 17 people safely
+  Agra Metro trials now run every two days, with trains passing underground through half the city.
 </div>
 
 
@@ -220,37 +233,16 @@ body {
 
 <div class="container">
 
-  <!-- HEADLINE -->
-  <div class="headline">
-    The incident at the Essar restaurant near Idgah railway station
+  <!-- SINGLE NEWS IMAGE DISPLAY -->
+  <div class="single-news-image">
+    <img 
+      src="https://jnmgzahwlztahadtgklx.supabase.co/storage/v1/object/public/updates_bucket/1767324995404_Screenshot%202026-01-02%20090539.png"
+      alt="Agra Fire News"
+    >
   </div>
 
-  <div class="sub-headline">
-    A fire broke out in Essar restaurant near Idgah railway station on Monday morning due to short circuit. The entire restaurant was filled with smoke after the fire broke out due to short circuit in the wires near the visitor counter. 17 people staying in the restaurant were in deep sleep in the morning. There was panic among them. The fire brigade reached the spot and rescued 17 people safely from the restaurant. The fire was brought under control after an hour's effort.
-  </div>
+</div>
 
-  <!-- ORDER CONTENT -->
-  <div class="order-box">
-    <div class="order-title">Agra happening</div>
-
-    <div class="order-meta">
-      Issued On: 22 December 2025 | News Heights
-    </div>
-
-    <div class="order-text">
-     The incident took place at 5:40 am. A fire broke out due to a short circuit in the wiring near the visitor counter of the restaurant and hotel located at Katghar near the Idgah railway station. Due to this, the hotel was filled with smoke. The hotel staff tried to control the fire on their own. By then, the smoke had spread inside the entire hotel. The 17 people staying there were in deep sleep. On getting information about the fire, panic and terror spread among the people staying there. They started running away leaving their belongings in the rooms.
-      17 people were fast asleep in the restaurant and hotel.
-Two fire engines arrived at the scene and began controlling the fire, preventing it from reaching the upper levels of the hotel. Firefighters successfully evacuated the people after about half an hour of effort. Many were safely evacuated via the roof.
-
-Chief Fire Officer Devendra Kumar Singh said the cause of the fire was a short circuit. All those staying there were safely evacuated.
-    </div>
-
-    <!-- OPTIONAL IMAGE -->
-    <div class="order-image">
-      <!-- Replace with actual order image if needed -->
-      <img src="https://www.jagranimages.com/images/2025/12/22/article/image/fire-agr-1766374691520.webp" alt="DM Order Image">
-    </div>
-  </div>
 
 </div>
 
@@ -274,5 +266,4 @@ if(window.innerWidth<768){
 }
 </script>
 </html>
-
 
