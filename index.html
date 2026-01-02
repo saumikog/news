@@ -207,6 +207,24 @@
     object-fit: cover;
     border-radius: 6px;
     }
+    /* =========================
+   EXTRA MOBILE SQUEEZE – HEADER GIF
+========================= */
+@media (max-width: 768px) {
+
+  .header-right {
+    padding-right: 4px;
+  }
+
+  .header-newyear-gif {
+    width: 100px;              /* squeezed further */
+    aspect-ratio: 16 / 9;
+    margin-right: -8px;        /* pull inward */
+    border-radius: 6px;
+  }
+}
+
+
     .news-main {
     max-width: 1200px;
     margin: 30px auto;
@@ -416,6 +434,9 @@ body {
     right: 10px;
   }
 }
+body {
+  overflow-x: hidden;
+}
 
 
 
@@ -423,7 +444,7 @@ body {
     </head>
 
     <body>
-
+    
     <!-- TOP BAR -->
     <div class="topbar">
     <div><span class="live-dot"></span>LIVE NEWS</div>
